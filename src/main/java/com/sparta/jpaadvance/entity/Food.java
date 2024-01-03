@@ -15,7 +15,7 @@ public class Food {
     private String name;
     private double price;
 
-    @OneToOne
-    @JoinColumn(name = "user_id") //외래키 주인
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 }
